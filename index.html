@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1>
+                    Generator
+                </h1>
+                <p>
+                    Coded with 💜 by <a href="https://www.shecodes.io/graduates/137728-thin-thin-maw"
+                        target="_blank">Thin Thin Maw</a>, coding workshops
+                    for busy women.
+                </p>
+            </div>
+
+            <a href="https://www.shecodes.io/" target="_blank">
+                <img src="images/shecodes.png" alt="">
+            </a>
+        </header>
+        <div class="form-container">
+            <form id="poem-generator">
+                <input type="text" id="instructions" autofocus class="instructions" required
+                    placeholder="Enter the topic" autocomplete="off" />
+                <input type="submit" value="Generate" class="btn" id="submit-button">
+            </form>
+            <div class="hint">i.e: Flower, Paris or Cheese</div>
+        </div>
+        <div id="poem" class="poem"></div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
